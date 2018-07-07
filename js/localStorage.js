@@ -5,7 +5,7 @@ localforage.setDriver([
 	localforage.WEBSQL,
 	localforage.LOCALSTORAGE
 ]).then(function () {
-	localforage.getItem("key", function (err, data) {
+	localforage.getItem("cq", function (err, data) {
 		console.log("Initial data: "+data);
 
 		if (data === null) {
@@ -45,10 +45,10 @@ localforage.setDriver([
 				}
 			};
 
-			localforage.setItem("key", data, function () {
+			localforage.setItem("cq", data, function () {
 				console.log('Using: ' + localforage.driver());
 				console.log('Saved: ' + data);
-				localforage.getItem("key", fetch(data))
+				localforage.getItem("cq", fetch(data))
 			});
 		} else {
 			fetch(data);

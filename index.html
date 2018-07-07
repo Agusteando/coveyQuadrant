@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title></title>
+      <title>Covey's Quadrants</title>
       <meta name="author" content="">
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,15 +14,15 @@
    <body>
 
    <form id="form">
-   <button id="save" class="btn btn-warning">Save</button>  
-      <div class="container">
+   <button id="save" class="btn btn-warning" hidden><h1>Covey's Quadrants</h1></button>
+      
 
-            <h1>Super Quadrants</h1>
+            
 			<div id="wrapper">
-            <div id="Q1" class="square"><input class="input" type="text"><input class="date" type="date"></div>
-            <div id="Q2" class="square"><input class="input" type="text"><input class="date" type="date"></div>
-            <div id="Q3" class="square"><input class="input" type="text"><input class="date" type="date"></div>
-            <div id="Q4" class="square"><input class="input" type="text"><input class="date" type="date"></div>
+            <div id="CQ1" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"><input class="input" type="text" placeholder="Q1"><input class="date" type="date"></div>
+            <div id="CQ2" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"><input class="input" type="text" placeholder="Coding"><input class="date" type="date"></div>
+            <div id="CQ3" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"><input class="input" type="text" placeholder="Licenciatura en Nutrición"><input class="date" type="date"></div>
+            <div id="CQ4" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"><input class="input" type="text" placeholder="Formación continua"><input class="date" type="date"></div>
 			</div>			
 	  </form>
 
@@ -31,8 +31,9 @@
 		<input id="post2" type="text" name="array" hidden>
 	  </form>
 	  <button id="sync" onclick="googleRun()" type="button"></button>
-      </div>
-      <div class="footer">
+      
+
+      <div class="footer" hidden>
          <p>Developed by Agustín Jurado</p>
       </div>
 	        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>

@@ -26,5 +26,5 @@ function googleRun() {
   // print the returned data
   function ctrlq(e) {
     data = JSON.parse(e.result);
-	localforage.setItem("key", data, fetch(data));
+	localforage.setItem("cq", data, fetch(data));
   }

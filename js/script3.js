@@ -6,7 +6,7 @@ $( document ).ready(function( $ ) {
                 var serializedData = $form.serialize();
         
 
-                $('h1').text('Saving...');
+                $('h1').text('Saving your progress..');
        
                 request = $.ajax({
                         url: "https://script.google.com/macros/s/AKfycbylHXXpVNEcSJDH-PTR3eVcE71u6spUp2um1NxerWdxE1B1qRjW/exec",
@@ -17,7 +17,7 @@ $( document ).ready(function( $ ) {
 
                 request.done(function (response, textStatus, jqXHR){
                         // log a message to the console
-$('h1').text('Progress saved.');console.log("Sent data through AJAX to sheets");
+console.log("Sent data through AJAX to sheets");
                 });
         
 
@@ -33,7 +33,7 @@ $('h1').text('Progress saved.');console.log("Sent data through AJAX to sheets");
 
                 request.always(function () {
                         // reenable the inputs
-
+$('h1').text('Success!');
                 });
         
                 // prevent default posting of form
