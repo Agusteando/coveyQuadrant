@@ -1,10 +1,10 @@
 {
-  "short_name": "Quadrants",
-  "name": "Alejandro's Quadrants",
+  "short_name": "Cuadrantes mágicos",
+  "name": "I'm a DOER!",
   "icons": [
     {
       "src":"css/icon.png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
